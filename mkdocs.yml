@@ -1,0 +1,90 @@
+## Project Information
+site_name: 2022暑期社会实践                                                 ## 显示在左上角和标签页上的站点名字
+site_url: https://summersocial.starlightxyy.cn              ## 点击站点名字跳转到的网址
+repo_url: https://github.com/amorphophallus/summer-social-practice          ## 右上角 icon 的跳转地址
+repo_name: summer-social-practice                                           ## 右上角 icon 的备注文字
+edit_uri: edit/main/docs                            ## 文章目录左侧的编辑按钮的跳转地址
+site_description: Note about everything.
+theme:
+    name: material
+    features:
+        - navigation.sections                       ## 展开侧边导航
+        - navigation.indexes                        ## 启用章节概览 index.md
+        - navigation.top                            ## 启用回到顶部按钮
+        - content.tabs.link                         ## 
+    palette:
+
+        # Palette toggle for automatic mode
+        - media: "(prefers-color-scheme)"
+          toggle:
+            icon: material/brightness-auto
+            name: Switch to light mode
+
+        # Palette toggle for light mode
+        - media: "(prefers-color-scheme: light)"
+          scheme: default 
+          toggle:
+            icon: material/brightness-7
+            name: Switch to dark mode
+
+        # Palette toggle for dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          toggle:
+            icon: material/brightness-4
+            name: Switch to system preference
+
+
+
+
+## Documentation Layout
+nav:
+    - '计划': 'index.md'
+    - '答疑': '答疑.md'
+    - '直播内容': '直播内容.md'
+    - '行程': '行程.md'
+
+# Extensions
+markdown_extensions:
+
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.superfences            # content tabs
+  - pymdownx.tabbed:
+      alternate_style: true 
+
+# plugins
+plugins:
+    - search
+    - roamlinks
+    - tags
